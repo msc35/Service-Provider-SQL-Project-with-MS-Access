@@ -1,0 +1,35 @@
+Project description
+
+****Service Provider: You are going to design a service provider database similar to Armut. 
+Users of this system are going to be customers, workers, and providers. For each user,
+ you should store a unique email address, name, surname, and phone number. For workers, 
+you should also store a salary. Services are stored with a unique id, service name, and 
+description. A provider could offer many services, in this case, you should also store 
+the price. The same service could be offered by many other providers. Customers are able 
+to make a request for the services that providers offer. For a request, a unique 
+request-id, date, and status should be stored. The status is going to be “Waiting” when 
+the request is newly created. Many workers could be associated with a request, the 
+status is going to be “Active” in this situation. One worker could be associated with 
+many requests. The status should be “Complete” once the work is done. Customers could 
+review providers once they have a completed request of an offer by that provider. You 
+should store the information about which customer reviews which request and which 
+provider, as well as a rating in range [0,100] and a comment. Each worker could perform 
+at least one service, and a service could be performed by many workers. A service type 
+is stored with a unique type id and a type name. A service should be in exactly one 
+type, but there could be many services of the same type.
+
+
+
+
+
+
+
+
+* Create an Access Database, create all the tables (including entities and relations), create all the relationships. populate every table with at least 10 meaningful entries.
+* Complete 1 of the given scenarios, using forms and meaningful user interface elements.
+* Service Provider
+1. Login as a provider. Choose a service type to show the existing services of the selected type. Choose a service and write a price to create a new offer. List existing offers of this provider. List reviews made for this provider, show this provider’s average rating.
+2. Login as a provider. List existing requests for the services that are offered by this provider. Choose one request and one worker to associate this worker with the request. Workers that could be associated with this request should be able to perform the service of interest. Choose one request to list workers that are associated with this request.
+3. Login as a customer. List existing services. Choose one service to list existing offers of that service along with provider names and prices. Choose one offer to create a new request. Show completed requests of this customer, choose one request and review it.
+
+
